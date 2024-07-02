@@ -34,8 +34,8 @@ class NotesApp extends StatelessWidget {
       ),
       initialRoute: '/home',
       routes: {
-        "/home" : (context) => HomePage(dbService: dbService),
-        "/about" : (context) => const AboutPage(),
+        "/home": (context) => HomePage(dbService: dbService),
+        "/about": (context) => const AboutPage(),
         "/addnote": (context) => AddNotePage(
           dbService: dbService,
           note: ModalRoute.of(context)?.settings.arguments as Note?,
